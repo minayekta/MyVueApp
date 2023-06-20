@@ -1,4 +1,5 @@
 <template>
+  <div class="bk-header">
     <div class="container px-0">
   <div class="row mx-0 px-0 py-3">
       <div class="col-2">
@@ -23,14 +24,20 @@
         </ul>
       </div>
       <div class="col-3 d-flex justify-content-between">
-  <input type="text" class="form-control" placeholder="serch" >
+  <input type="text" class="form-control" placeholder="search" >
 
   <button type="button" class="btn btn-primary ms-2 px-3 py-">Login</button>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
 <script>
 export default {}
 </script>
+<style>
+.bk-header{
+    background-color: aliceblue;
+}
+</style>
