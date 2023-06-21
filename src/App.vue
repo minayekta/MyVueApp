@@ -3,6 +3,7 @@
 <template>
   <div>
    <HeaderWebsite></HeaderWebsite>
+   <router-view></router-view>
    <FooterWesite></FooterWesite>
   </div>
 </template>
