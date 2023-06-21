@@ -14,7 +14,8 @@
     "bootstrap": "^5.3.0",
     "underscore": "^1.13.6",
     "vue": "^3.2.47",
-    "vue-router": "^4.2.2"
+    "vue-router": "^4.2.2",
+    "vue-spinner": "^1.0.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
