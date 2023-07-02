@@ -2,9 +2,9 @@
 
 <template>
   <div>
-   <HeaderWebsite></HeaderWebsite>
-   <router-view></router-view>
-   <FooterWesite></FooterWesite>
+   <HeaderWebsite v-if="showL"></HeaderWebsite>
+   <router-view @user_LoggedIn="showLayout"></router-view>
+   <FooterWesite v-if="showL"></FooterWesite>
   </div>
 </template>
 <script>
@@ -16,6 +16,16 @@ export default {
     HeaderWebsite,
     FooterWesite
   },
+  data(){
+    return{
+      showL:false
+    }
+  },
+  methods:{
+    showLayout(){
+      this.showL = true
+    }
+  }
 }
 </script>
 
