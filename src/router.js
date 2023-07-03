@@ -11,7 +11,7 @@ const routes =[
     { path: "/contact-us/", component: ContactUsPage,meta:{requireAuth:true}},
     { path: "/blog", component: Blog,meta:{requireAuth:true}},
     { path: "/blog/:id", component: Blog},
-    { path: "/login", component: Login},
+    { path: "/login", component: Login,meta:{requireAuth:true}},
 ]
 const router = createRouter({
     history: createWebHistory(),
@@ -19,7 +19,7 @@ const router = createRouter({
 })
 // قبل از وارد شدن به روت ها یه کاری انجام بده
 router.beforeEach(function(to, from, next) {
-    if(to.meta.requireAuth ){
+    if(!to.meta.requireAuth ){
         return next ({path:'/login'})
         }else next()
 })

@@ -24,7 +24,7 @@
       <div class="col-3 d-flex justify-content-between">
   <input type="text" class="form-control" placeholder="search" >
 
-  <button type="button" class="btn btn-primary ms-2 px-3 py-">Login</button>
+  <button type="button" @click="gotoLogin" class="btn btn-primary ms-2 px-3 py-">Login</button>
       </div>
     </div>
   </div>
@@ -32,7 +32,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods:{
+    gotoLogin(){
+      this.$router.push({path:'/login'} );
+    }
+  }
+}
 </script>
 <style scoped>
 .nav-link{
